@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=https://chat.whatsapp.com/FjE1yXlha90DkkaUdyRioH">
+    <meta charset="utf-8" />
+    <title>Redirecionando...</title>
+
+    <script>
+      (function () {
+        var url = "https://chat.whatsapp.com/FjE1yXlha90DkkaUdyRioH";
+
+        // Tenta abrir o app do WhatsApp (Android)
+        window.location.href = "intent://chat.whatsapp.com/FjE1yXlha90DkkaUdyRioH#Intent;scheme=https;package=com.whatsapp;end";
+
+        // Fallback para navegador caso o app não abra
+        setTimeout(function () {
+          window.location.replace(url);
+        }, 1500);
+      })();
+    </script>
   </head>
+
   <body>
-    <p>Redireciona para o grupo do WhatsApp...</p>
+    <p>Redirecionando para o grupo do WhatsApp...</p>
   </body>
 </html>
